@@ -1,0 +1,65 @@
+{
+  "scope": "Explicit reviewed source component release; no original history, private configuration or assets",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "b7fe46abe7e8b3b5746f6fb5f437cc65bb404af4f8898a0fcea22ded7c7e5596",
+      "bytes": 59
+    },
+    {
+      "path": "EXCLUSIONS.md",
+      "sha256": "ef3dc2edd47813229c6ada1f800f9109758e70df1ad79bdea9d83dbbe6bbc195",
+      "bytes": 691
+    },
+    {
+      "path": "README.md",
+      "sha256": "0935191a5d8ba34c82277c8227054a3a23df8efc92861f59bb06329568cd80b2",
+      "bytes": 1721
+    },
+    {
+      "path": "frontend/components/OwnerControls.tsx",
+      "sha256": "7b77dd9e5dc1d6d10f63ebfd6438538f976308b7df97329a76ae04cfb23c4244",
+      "bytes": 2665
+    },
+    {
+      "path": "frontend/data/ownerBridge.ts",
+      "sha256": "850ee49b1e2d13af68a9fd58a209bda6709abccd0206c555c48045521f38bf56",
+      "bytes": 2545
+    },
+    {
+      "path": "frontend/tests/owner-bridge.test.ts",
+      "sha256": "ff4f6701895c089c6f90cf7ecc01ac307b2d4020fcddea04b50172b2771d072b",
+      "bytes": 2093
+    },
+    {
+      "path": "go.mod",
+      "sha256": "dbba70d2d7560653bde469778a4119c5a332c721f591a2fe0f159d3cf4f1f715",
+      "bytes": 51
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "64d49a95c0b6d7c556a4051ac6d9b11fea7dcdb34a3ba1d6d60e2976c5a96132",
+      "bytes": 125960
+    },
+    {
+      "path": "package.json",
+      "sha256": "4df788cda289cf62458f177812c4bf0c114f68d9dd7fc88311414cd3c29318fb",
+      "bytes": 776
+    },
+    {
+      "path": "transport/transport.go",
+      "sha256": "44896012981c8cdc5dfdcca0f1c6d0e962b4e7413f2c47ac43ca8e52b124a309",
+      "bytes": 1094
+    },
+    {
+      "path": "transport/transport_test.go",
+      "sha256": "bc5672a046dde42a0fe24d9d11b989cd1697f434cf55d8e3870425dd80e8b986",
+      "bytes": 577
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "29fe0309dd5423c85416221f95562432507194573bb33a7d4eb3f7a54b4f5f67",
+      "bytes": 286
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+import { afterEach, describe, expect, it, vi } from 'vitest';
+import { ownerCall, submissionID, useOwnerBridge } from '../data/ownerBridge';
+afterEach(()=>{vi.unstubAllGlobals();useOwnerBridge.setState({connected:false,state:null,error:'',busy:false});});
+describe('owner bridge client',()=>{
+ it('uses bounded random submission keys',()=>{const one=submissionID();expect(one).toMatch(/^[a-f0-9]{32}$/);expect(submissionID()).not.toBe(one);});
+ it('never converts an authentication error into success',async()=>{vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:false,json:async()=>({error:'Owner session required'})}));await expect(ownerCall('state')).rejects.toThrow('Owner session required');});
+ it('refuses oversized pairing input before contacting a server',async()=>{const call=vi.fn();vi.stubGlobal('fetch',call);await useOwnerBridge.getState().pair(new File(['x'.repeat(300)],'pair.json'));expect(call).not.toHaveBeenCalled();expect(useOwnerBridge.getState().connected).toBe(false);});
+ it('pairs by explicit file selection and sends CSRF only in runtime headers',async()=>{const call=vi.fn().mockResolvedValueOnce({ok:true,json:async()=>({csrf:'test-session-capability'})}).mockResolvedValueOnce({ok:true,json:async()=>({inbox:[],approvals:[],tasks:[],stopped:false})});vi.stubGlobal('fetch',call);await useOwnerBridge.getState().pair(new File([JSON.stringify({pairing:'test-only-pairing'})],'pair.json'));expect(useOwnerBridge.getState().connected).toBe(true);expect(call.mock.calls[0][0]).toBe('/api/owner/session');expect(call.mock.calls[1][1].headers['X-HQ-CSRF']).toBe('test-session-capability');expect(call.mock.calls[1][1].credentials).toBe('same-origin');});
+ it('reports blocked writes without fabricated records',async()=>{vi.stubGlobal('fetch',vi.fn().mockResolvedValue({ok:false,json:async()=>({error:'Blocked by Go rules'})}));expect(await useOwnerBridge.getState().act('inbox',{text:'Synthetic test',requestId:submissionID()})).toBe(false);expect(useOwnerBridge.getState().state).toBeNull();expect(useOwnerBridge.getState().error).toBe('Blocked by Go rules');});
+});
