@@ -1,43 +1,66 @@
-# Local Owner Controls and Fairy Headquarters
+# AI Agent Office / Fairy Headquarters 🧚
 
-The repository now also includes a runnable sanitized fairy-world UI under `ui/`. See [UI setup and provenance](ui/README.md). Start with `npm run dev` (127.0.0.1:5175), build with `npm run build:ui` and preview with `npm run preview:ui`. It has no private backend or live account integration. Generic visual rooms do not claim agent execution or token usage.
+Matematik öğrencisiyim; yazılım geliştirmeyi ve yapay zekâyla denemeler yapmayı seviyorum. Derslerimi, projelerimi ve fikirlerimi toparlamak için tek asistan yerine küçük bir ekip kurmak istedim. Bu, hem kişisel bir araç hem de öğrenme projem.
 
+## Ekiple tanışın
 
-Reusable source components for a separately secured local application. This release contains bounded Go JSON/capability helpers, a read-only outbound transport, React owner-session/routing/decision controls and a CSP header helper. The reusable components are not a complete agent runtime, OAuth client, email processor or Notion integration; the separate UI is a standalone visual shell.
+Bunlar özel yerel sistemde tanımladığım roller; hepsi çalışan birer yapay zekâ uzmanı değil.
 
-## Security changes
+| Ajan | Görevi |
+| --- | --- |
+| Cigdem | Koordinasyon ve görev yönlendirme |
+| Scholar | Matematik, ders notları ve sınav hazırlığı |
+| Radar | Araştırma ve kaynak kontrolü |
+| Builder | Yazılım geliştirme ve test |
+| Creator | İçerik planlama ve medya üretimi |
+| Career | CV, portfolyo ve kariyer çalışmaları |
+| Bekci | Güvenlik denetimi ve bağımsız inceleme |
+| Kapanis | Gün sonu değerlendirmesi ve planlama |
+| Depocu | Dosya düzeni ve depolama incelemesi |
+| Postaci | Önemli e-postaları ve yapılacakları ayıklama |
 
-The Go request decoder now rejects duplicate keys at every nesting level, escaped duplicates, case-fold aliases (including Unicode aliases), incorrect top-level DTO field spelling, malformed UTF-8, trailing JSON, excessive nesting and oversized bodies. It rejects cancelled requests and invalid destinations. DTO validation and required-field checks remain the host's responsibility; nested typed DTO field spelling is not recursively enforced. Use explicit JSON tags and validate business fields before doing work.
+Özel mimaride **13 yardımcı profil** (Builder: 4, Creator: 5, Bekci: 4) ve gerektiğinde yüklenen **11 skill tanımı** var. Rol sorumluluğu, yardımcı alt işi, skill yaklaşımı tanımlar; araç işlemi yapan koddur. Profil veya skill, çalışan süreç ya da hesap erişimi demek değil.
 
-The browser client limits operation names, clears operational records on HTTP 401 and reports uncertain server logout instead of fabricating revocation. Session capability stays in memory. Server errors must already be redacted. Client controls are never authorization. The backend must implement peer/Host/Origin/CSRF checks, authentication, scope enforcement, durable state and item-specific approvals. Approval must remain separate from application.
+## Neden peri ofisi?
 
-The outbound reader takes exact HTTPS targets configured by a trusted host for the official Notion/Gmail API origins. It exposes GET only, rejects redirects and query-bearing target URLs, bounds response size/time and request rate, and redacts errors. It acquires no credentials, reads no environment or local credential files, and never retries. There is no constructor side effect or network activity on import. An OAuth credential host, API-specific discovery, query/write operations, schema mappings, provenance, durable idempotency and readback workflow are not included. Do not use this primitive as a complete authorization or duplicate-prevention engine. Third-party responses remain untrusted data.
+Klasik panel yerine küçük bir dünya istedim: on 3D oda, farklı periler, orman atmosferi, kanat/süzülme animasyonları, kamera ve oda yakınlaşması, inceleme paneli ve grafik ayarları.
 
-The CSP helper has a strict same-origin production default and an explicit development-only local websocket exception. The nonce must be generated cryptographically by the host and inserted into intended script tags. Inline styles are allowed for existing component compatibility; this is not a universal XSS proof. Apply the returned headers in a separately reviewed server; importing the helper does not activate protection.
+Çalışma animasyonu doğrulanmış yürütme için tasarlandı. Tavşanlar yardımcıları temsil eder; public katalogda yardımcı tanımlı olmadığından görünmezler. **Public sürüm ajan çalıştırmaz; görev veya token kullanımı uydurmaz.**
 
-## Checks
+## Nasıl çalışmasını istiyorum?
 
-Use Go 1.25+, Node 22.12+, npm and Python 3. No Go modules beyond the standard library are required.
+Hedefim: Cigdem’e görev vermek, Go’nun isteği izinlerle ilgili uzmana yönlendirmesi ve sonucu ofisten incelemek. Builder geliştirme/test, Bekci bağımsız güvenlik incelemesi yapacak; hassas işlemlerde son karar bende.
+
+Özel projede yerel görev kaydı, yönlendirme ve deterministik denetimler mevcut. Tam uzman yürütmesi hâlâ geliştirme aşamasında.
+
+- **Altyapı:** Go; React, TypeScript, Three.js / React Three Fiber, Vite, Tailwind, Zustand ve Motion.
+- **Yerel kayıtlar:** Şimdilik JSON. SQLite henüz ana veritabanı değil.
+- **Devam edenler:** Claude Code, uzman görevleri, PDF işleme, araştırma, medya üretimi, Gmail/Outlook ve Notion bağlantıları. Hazır adaptör, çalışan OAuth bağlantısı demek değil.
+
+## Güvenlik ve bu deponun sınırı
+
+Ajanların bilgisayarımda serbestçe dolaşmasını istemiyorum. Elle başlatma, yerel kayıtlar, sınırlı izinler/delegasyon ve ayrı onay/uygulama durumları kullanıyorum. Testler güvenlik garantisi veya sertifika değil.
+
+Burada arayüz, genel Go/frontend bileşenleri, sentetik testler ve incelenmiş asset’ler var. Özel talimatlar, hafızalar, günlükler, görev/takvim kayıtları ve kimlik bilgileri yerel kalıyor. **Tam backend burada yok.** Henüz kaynak lisansı seçmedim; public olmak otomatik açık kaynak lisansı sağlamaz.
+
+## Yerelde çalıştırma
+
+Node.js **22.12+** ve npm gerekiyor. Go bileşenlerini test etmek için ayrıca **Go 1.25+** kullanıyorum.
 
 ```sh
-go test ./...
-go test -race ./...
-go vet ./...
+git clone https://github.com/cigdem-gokdas/AI-agent-office.git
+cd AI-agent-office
 npm ci --ignore-scripts
-npm test
-npm run typecheck
-npm run build
-python3 scripts/check-release.py
+npm run dev
 ```
 
-Frontend dependencies are isolated and pinned by the lockfile. The build emits component JavaScript and declarations into ignored `dist/`; it does not build or serve a full application. Tests use synthetic data and injected transports; they make no real account calls. No deployment, scheduling, model request, credential setup or CI workflow is activated.
+Tarayıcı: **http://127.0.0.1:5175**. GitHub Pages yayını yok; bu komut özel ajanları başlatmaz.
 
-## Integration contract
+```sh
+npm run build:ui       # Arayüz derlemesi
+npm test               # Frontend ve güvenlik testleri
+npm run typecheck:ui   # TypeScript kontrolü
+go test ./...          # Genel Go bileşenleri
+```
 
-The components expect a compatible private backend at `/api/owner/` with session, state, inbox, route, decision and logout operations; the client also allows an authenticated snapshot read for a host that implements it. No public backend server is supplied. Bring your own reviewed authorization and persistence. No default credentials, private prompts, configuration, operational records or simulated completed work are distributed.
-
-## Review and licenses
-
-See `PUBLICATION_MANIFEST.json` for the exact reviewed file inventory and hashes, `PUBLIC_REVIEW.md` for verification scope, `EXCLUSIONS.md` for intentionally omitted material and `DEPENDENCY_LICENSES.json` for locked package metadata. The manifest deliberately excludes its own hash and inventories all other publishable files.
-
-The UI now distributes only explicitly pinned CC0 models/lighting and project-generated scenic/face artwork listed in ui/ASSETS.json. No owner photographs, private screenshots or trademark logos are distributed. Dependencies remain unmodified external packages with their own licenses; installed modules and build outputs are ignored. No application-source LICENSE has been selected in this component release. The owner should choose appropriate source licensing before further publication; dependency metadata does not grant a license to application code.
+Asset kaynakları: [ui/ASSETS.json](ui/ASSETS.json). Yayın sınırları: [EXCLUSIONS.md](EXCLUSIONS.md).
