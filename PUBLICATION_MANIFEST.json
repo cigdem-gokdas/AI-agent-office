@@ -1,112 +1,457 @@
 {
-  "scope": "Audited generic source components and synthetic tests only; no private runtime, configuration, policies, accounts, data, assets or inherited history",
-  "base_commit": "cff4b4d",
+  "scope": "Reviewed public components plus sanitized fairy UI and pinned CC0/project-generated assets; no private runtime or history",
+  "base_commit": "de160eb",
   "manifest_self_excluded": true,
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "2d05084e94c2f96b65425d3489e078b6cdadaf737ad4dc40314d42d641d115a9",
-      "bytes": 292
+      "bytes": 304,
+      "sha256": "ccd55990618d8f6cc0c7fdcce1013d841518c2b41089c66dcb58363a24cc4f8b"
     },
     {
       "path": "DEPENDENCY_LICENSES.json",
-      "sha256": "3f86e36a7b371e80a0424498c2effd048ea5a3497d483ed0a69eb938659b1ddb",
-      "bytes": 26914
+      "bytes": 53986,
+      "sha256": "19b27742fb9c9b71a3c78f2a586cba983631f74ffae7d7cad4aa241b5c575c95"
     },
     {
       "path": "EXCLUSIONS.md",
-      "sha256": "818e4b294588c3cb9c706dd8a1ea58cb69f1fc95b26a43e6238785c0d612bcc4",
-      "bytes": 1698
+      "bytes": 1781,
+      "sha256": "e18c8278121523dbc789690945910eea0fd07390a038916e0a82765e7fcd7ecc"
     },
     {
       "path": "PUBLIC_REVIEW.md",
-      "sha256": "ca0d34e62886ec9b876fd1855ff0e0855fba1c1ef778210cc8fe4d02caa8ded1",
-      "bytes": 4145
+      "bytes": 6225,
+      "sha256": "ef9e9e169c7513b32281baefb58515990b07236d48a907eeca5156f7e7bae3ba"
     },
     {
       "path": "README.md",
-      "sha256": "c0b69bf84050a9ea0510c38a422ff468ea1586c251dd66aba32b0af6950aa78a",
-      "bytes": 4410
+      "bytes": 4926,
+      "sha256": "37e682f1ec0e1a5406c27f28865ef682b6d009ce26f961e9abe6813fbbb3ce18"
     },
     {
       "path": "frontend/components/OwnerControls.tsx",
-      "sha256": "7b77dd9e5dc1d6d10f63ebfd6438538f976308b7df97329a76ae04cfb23c4244",
-      "bytes": 2665
+      "bytes": 2665,
+      "sha256": "7b77dd9e5dc1d6d10f63ebfd6438538f976308b7df97329a76ae04cfb23c4244"
     },
     {
       "path": "frontend/data/ownerBridge.ts",
-      "sha256": "13c8b0f122a6e43fb020d2c6074231cd54e0e90bb0eea1249e0d45a10b6d0946",
-      "bytes": 2888
+      "bytes": 2888,
+      "sha256": "13c8b0f122a6e43fb020d2c6074231cd54e0e90bb0eea1249e0d45a10b6d0946"
     },
     {
       "path": "frontend/security/headers.ts",
-      "sha256": "8a9f9d7718a464fd8892a730d161bf0c35d526955c34df0ea7e57d140965c324",
-      "bytes": 774
+      "bytes": 774,
+      "sha256": "8a9f9d7718a464fd8892a730d161bf0c35d526955c34df0ea7e57d140965c324"
     },
     {
       "path": "frontend/tests/owner-bridge.test.ts",
-      "sha256": "592ccce6e416124f7c5e2e037ea6152706ccc9912b197f058dfa058aa597a744",
-      "bytes": 3158
+      "bytes": 3158,
+      "sha256": "592ccce6e416124f7c5e2e037ea6152706ccc9912b197f058dfa058aa597a744"
     },
     {
       "path": "frontend/tests/rendering.test.tsx",
-      "sha256": "6d9602f7535eec1d130c3c0fc84ff28801a49a476ba369caa84d677705afb74f",
-      "bytes": 632
+      "bytes": 632,
+      "sha256": "6d9602f7535eec1d130c3c0fc84ff28801a49a476ba369caa84d677705afb74f"
     },
     {
       "path": "frontend/tests/security-headers.test.ts",
-      "sha256": "0cb132e261c81e92c5e9d9f89d688a0392aa58a0a531cc3f6f008e962e4d427f",
-      "bytes": 938
+      "bytes": 938,
+      "sha256": "0cb132e261c81e92c5e9d9f89d688a0392aa58a0a531cc3f6f008e962e4d427f"
     },
     {
       "path": "go.mod",
-      "sha256": "dbba70d2d7560653bde469778a4119c5a332c721f591a2fe0f159d3cf4f1f715",
-      "bytes": 51
+      "bytes": 51,
+      "sha256": "dbba70d2d7560653bde469778a4119c5a332c721f591a2fe0f159d3cf4f1f715"
     },
     {
       "path": "outbound/reader.go",
-      "sha256": "e98718a73b708ff66ced8360a3f39a5f36bff4d463ad296d146118f56dd929d8",
-      "bytes": 3059
+      "bytes": 3059,
+      "sha256": "e98718a73b708ff66ced8360a3f39a5f36bff4d463ad296d146118f56dd929d8"
     },
     {
       "path": "outbound/reader_test.go",
-      "sha256": "8532bcf7b0e1d57ce668b83e5c65c65580758cbfa1487d8221e3f0c5a7c1e3b9",
-      "bytes": 2868
+      "bytes": 2868,
+      "sha256": "8532bcf7b0e1d57ce668b83e5c65c65580758cbfa1487d8221e3f0c5a7c1e3b9"
     },
     {
       "path": "package-lock.json",
-      "sha256": "775966f60378786b5e8e5be8131ba377250cbbd4fb342ec72061062452ce0902",
-      "bytes": 65651
+      "bytes": 125944,
+      "sha256": "ce96965c88ddae075f35e22d21109976a7af8052afed922d79420d3043471609"
     },
     {
       "path": "package.json",
-      "sha256": "4d8c97e71e7cc65a5e8ae356c059c2b9f60458c30a6b78c3aed05b83e5a4c731",
-      "bytes": 540
+      "bytes": 1062,
+      "sha256": "08985431673511e63e92ce6d7d197a789b434fbc0aaf77f78add76851e685582"
     },
     {
       "path": "scripts/check-release.py",
-      "sha256": "1c802fd174ecb57a18299e3482abba39773e93ddffb9d85c0757aee1d7902353",
-      "bytes": 3282
+      "bytes": 3916,
+      "sha256": "d95f6d42c0bac636e0c9d9464236144782fe1ba39beba709b2bf5b4f39627f1d"
     },
     {
       "path": "transport/transport.go",
-      "sha256": "1bfabcd823443f7b2a4ed15c4ca397806980df3b37b85bf5e1ed69981bba7d4d",
-      "bytes": 3132
+      "bytes": 3132,
+      "sha256": "1bfabcd823443f7b2a4ed15c4ca397806980df3b37b85bf5e1ed69981bba7d4d"
     },
     {
       "path": "transport/transport_test.go",
-      "sha256": "e2640cefaba43d51a2b792a9833620a3043dbd9588548541e544fafdae55d1cb",
-      "bytes": 2379
+      "bytes": 2379,
+      "sha256": "e2640cefaba43d51a2b792a9833620a3043dbd9588548541e544fafdae55d1cb"
     },
     {
       "path": "tsconfig.build.json",
-      "sha256": "9c2c2c6f284b204eae0616eb8cc33b936db7399cb08c7cebee6e6cea68fb7949",
-      "bytes": 290
+      "bytes": 290,
+      "sha256": "9c2c2c6f284b204eae0616eb8cc33b936db7399cb08c7cebee6e6cea68fb7949"
     },
     {
       "path": "tsconfig.json",
-      "sha256": "29fe0309dd5423c85416221f95562432507194573bb33a7d4eb3f7a54b4f5f67",
-      "bytes": 286
+      "bytes": 286,
+      "sha256": "29fe0309dd5423c85416221f95562432507194573bb33a7d4eb3f7a54b4f5f67"
+    },
+    {
+      "path": "ui/ASSETS.json",
+      "bytes": 8195,
+      "sha256": "e6b6d43fe03a1f2d436b606bf26bf90b485f8cd3498768b10b03c5170986e89f"
+    },
+    {
+      "path": "ui/README.md",
+      "bytes": 1816,
+      "sha256": "7c662a4b2d085f551bc1fd1af1c13d58f2c1134f77110963ab3727e802acebd0"
+    },
+    {
+      "path": "ui/index.html",
+      "bytes": 373,
+      "sha256": "b03138aea7fb070deb2c92d9be9f0ac02e77befe9bde43393a89d3ec4a802b2c"
+    },
+    {
+      "path": "ui/public/assets/art105/face-mobile.png",
+      "bytes": 68211,
+      "sha256": "4c5af0abf831ba07437742875678afd473c710beec5ec755bacb0f2c585d1a6d"
+    },
+    {
+      "path": "ui/public/assets/art105/face-mobile.webp",
+      "bytes": 13366,
+      "sha256": "e6b551ddac69749b7a9d51f19e4147e08715258753fe2807d6a181e0276d121c"
+    },
+    {
+      "path": "ui/public/assets/art105/face.png",
+      "bytes": 250350,
+      "sha256": "c909f2223b75cf34a3099f29288cc4fc75edfd2b44839660ee8487caf15a71bc"
+    },
+    {
+      "path": "ui/public/assets/art105/face.webp",
+      "bytes": 36546,
+      "sha256": "78a5b822929267bdc03403363eb01d2461f5be60f2410c7bee3c02b6507bbb5d"
+    },
+    {
+      "path": "ui/public/assets/art105/kingdom-mobile.jpg",
+      "bytes": 184974,
+      "sha256": "bf1dbafbb292d736af45bf7f2e95f18f9d5ecab29190ee1805337d35a82345e1"
+    },
+    {
+      "path": "ui/public/assets/art105/kingdom-mobile.webp",
+      "bytes": 180248,
+      "sha256": "19431e6de2d6259c6e7dff9b2b492354bd4ddc2b48345ef1bd0f835c072ac23a"
+    },
+    {
+      "path": "ui/public/assets/art105/kingdom.jpg",
+      "bytes": 618595,
+      "sha256": "97c4e07623de4c93440910076ee5aa27b870e54745a1e911f91e6789f124b248"
+    },
+    {
+      "path": "ui/public/assets/art105/kingdom.webp",
+      "bytes": 601124,
+      "sha256": "566bc0a7abead37d8adbceb2c4a3f65d18a191b81e6232080a221412bba32cdf"
+    },
+    {
+      "path": "ui/public/assets/licenses/Kenney-CC0.txt",
+      "bytes": 510,
+      "sha256": "6913dd72bdc20532b7f02d86469058f45d886c9dabf60831275ed16927aa523b"
+    },
+    {
+      "path": "ui/public/assets/licenses/Poly-Haven-CC0.txt",
+      "bytes": 503,
+      "sha256": "d038bf374c298ebb7e9773d12af645fe3d3c3a09501e29dc6aa6c69600fd88e4"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/bookcaseclosedwide.glb",
+      "bytes": 23140,
+      "sha256": "55b9903e9646dc407ed5237a1c41c1f0a14f9edc22e3392bdb9a4804d846af6a"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/bookcaseopen.glb",
+      "bytes": 18020,
+      "sha256": "750702218d68c062b15dfef6ab06a4014d1cfa8bd05f02e57c53b7e13bec157c"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/books.glb",
+      "bytes": 6864,
+      "sha256": "b8dc56e5d29f6fc1f4727fccb1b9642627fee9942c48060a00034e98df02701c"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/bridge-woodround.glb",
+      "bytes": 21192,
+      "sha256": "3b8593e6f50ae78f0f3f5d51ef5ac4751808fd5cbd462f35d09bbde5388f1034"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/chaircushion.glb",
+      "bytes": 12588,
+      "sha256": "33544228984857f2cb502b58452fed72157335f9b1caf29e96da5c9094c53fdc"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/chairdesk.glb",
+      "bytes": 39016,
+      "sha256": "46406619186034cbe92b19b79a5f1a8e3f442a17a70a7524ef2c0ad0f35095c6"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/cliff-waterfall-rock.glb",
+      "bytes": 4488,
+      "sha256": "08063b24498cae385c204e9038a72f0dd438fdfa29ecf106a0df5e656b7edff6"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/computerkeyboard.glb",
+      "bytes": 3476,
+      "sha256": "9d9135789de2120e9f41ce3f0a56dd1b15f40adcc7888739bb842a2d820da322"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/computerscreen.glb",
+      "bytes": 6404,
+      "sha256": "5942cbad29a2d2b956619569926e81d50a4174403d592fece6556e57632dc643"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/desk.glb",
+      "bytes": 15048,
+      "sha256": "0164fe828f028b321730fb8c74502e353583f751be74da1682d42fff7d3c5a42"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/deskcorner.glb",
+      "bytes": 17984,
+      "sha256": "a6a77ba0083d5ecd34ad50f738867b03ed7b7f469429bb1acc78f423bcc3f034"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/flower-purpleb.glb",
+      "bytes": 8084,
+      "sha256": "2afb10cd68a9a7b185fc46110be0da550ea2aef86ef9ac6b7339f217eb4b636a"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/flower-redc.glb",
+      "bytes": 7600,
+      "sha256": "5a5c9c8572e8f56287ee1f5f836f98ac08e275f31325b4bc91d2832bc142ceb7"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/lamproundfloor.glb",
+      "bytes": 6600,
+      "sha256": "50fe1b5b588edf15bfa9cc880f71a02a4fda6036350b24733d0ef4de5cc5e908"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/lamproundtable.glb",
+      "bytes": 6604,
+      "sha256": "75bb644caaa3da003b4fcad7a931722dd61cd2858aab70cf660021d5061fa1b2"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/laptop.glb",
+      "bytes": 5540,
+      "sha256": "5fa8a1f4a71ab8d82ef64da77a6973ffd350c6d4557516069a4ffd4bb8d808af"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/loungechairrelax.glb",
+      "bytes": 13904,
+      "sha256": "def698179e44de6cd17f4cfc2730273da54dd25458a29b079fbf4468abe5d98e"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/mushroom-redgroup.glb",
+      "bytes": 14960,
+      "sha256": "29f02df0589dd2b09e8d2aff6a4662394dac5cfcf1fec701640dcbd6127e0802"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/mushroom-tangroup.glb",
+      "bytes": 14956,
+      "sha256": "2dc979485f164d7dce34329096271f44e0c9ea329c104251d94bcfbc8f8fe05e"
+    },
+    {
+      "path": "ui/public/assets/vendor/sunrise-1k.hdr",
+      "bytes": 1466897,
+      "sha256": "835e88eb25464f4b164ff04e21f76a7f00474381cef787a86cc512687bc10059"
+    },
+    {
+      "path": "ui/src/App.tsx",
+      "bytes": 7289,
+      "sha256": "b9345c1517095db84af5ab15e3c59a375cb60e6b7c7f137e69298307c8a5ef97"
+    },
+    {
+      "path": "ui/src/components/CinematicBackdrop.tsx",
+      "bytes": 549,
+      "sha256": "befe331e56bb2b5367debc00f91b14524976893d230313e6ec2fa394b8b0bbf1"
+    },
+    {
+      "path": "ui/src/components/FairyPortrait.tsx",
+      "bytes": 1919,
+      "sha256": "9215ecce565f6b8befe529f95625051d5281d56e279cabd1beb6c659e6923efc"
+    },
+    {
+      "path": "ui/src/components/Icon.tsx",
+      "bytes": 2072,
+      "sha256": "6d8802397e2bd0f8f91bc7b9caa5875a4f5a83fe4929125e1b69217c8e493255"
+    },
+    {
+      "path": "ui/src/components/Inspector.tsx",
+      "bytes": 12241,
+      "sha256": "415074282ec719511ce7bf73143b5975f3d5a0c2c9203b226b42fef23f60b300"
+    },
+    {
+      "path": "ui/src/components/OwnerControls.tsx",
+      "bytes": 345,
+      "sha256": "fd8cb7591a5659cb1005694849d1f1bd3b6eea1a7447bc12dff17045361dd88d"
+    },
+    {
+      "path": "ui/src/data/catalog.ts",
+      "bytes": 2718,
+      "sha256": "2b6277c5a4ccd8b0dc6f5fef2c4aaee9791ac7824a68c31243be6e575884ce46"
+    },
+    {
+      "path": "ui/src/data/ownerBridge.ts",
+      "bytes": 80,
+      "sha256": "76ec1ae7424ae6903f930ace4a199d9f1e387e88a85c31418febf5912d68197f"
+    },
+    {
+      "path": "ui/src/data/runtimeAdapter.ts",
+      "bytes": 325,
+      "sha256": "1361bb6a5fcec8f0a8a54e575504f21031f1ad47a6c1b78fcd76e5db3fbfa94d"
+    },
+    {
+      "path": "ui/src/data/types.ts",
+      "bytes": 3227,
+      "sha256": "c4ada156fb2fdb33406c7d80eec538d48dd84ade0586f3d0108667a4c9dbe0ec"
+    },
+    {
+      "path": "ui/src/env.d.ts",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "ui/src/main.tsx",
+      "bytes": 158,
+      "sha256": "35f6687f0047963874af0e81a5f450fd4c7508e519c9e1d8558c9b88ca5568a0"
+    },
+    {
+      "path": "ui/src/scene/Assets.tsx",
+      "bytes": 2001,
+      "sha256": "0af40a5837ce95bba1bd902d2b62fe36d1488e64c27792bcf41d44f09cfe1d6d"
+    },
+    {
+      "path": "ui/src/scene/Companions.tsx",
+      "bytes": 2210,
+      "sha256": "c3614b243599a332888eb210c6a5ac7879183c3de6d02a38f6ee375c96adcd9a"
+    },
+    {
+      "path": "ui/src/scene/FairyResident.tsx",
+      "bytes": 14944,
+      "sha256": "727bbddff4b0a3c5f6ca7231ea9c0705d7ac5062f57391ff0a47e7c2ae59ea8b"
+    },
+    {
+      "path": "ui/src/scene/FloralTerraces.tsx",
+      "bytes": 2995,
+      "sha256": "d62fd16b157ca9a26ea7f24844a74d8d0ffc4651edeaa36b708a6f0d97b8f2fd"
+    },
+    {
+      "path": "ui/src/scene/Garland.tsx",
+      "bytes": 1882,
+      "sha256": "129544c9ecfacd640fcdb911cf028ac2aa13d0e00db6592622d92b043cc264c7"
+    },
+    {
+      "path": "ui/src/scene/HeadquartersScene.tsx",
+      "bytes": 14976,
+      "sha256": "792a7d09f5c746115e000f65ba0a7bab79acfcd6fb9873f657957689967343a9"
+    },
+    {
+      "path": "ui/src/scene/Helpers.tsx",
+      "bytes": 3620,
+      "sha256": "1bed581b1d5d6b6f16cdef41a26cc27e02f9bff1d8298210d0d1e251837c1272"
+    },
+    {
+      "path": "ui/src/scene/Performance.tsx",
+      "bytes": 2049,
+      "sha256": "bb820815a4fbdced3298ffdc8508e68f5c6bc3f5b022e1c932939f43c4015749"
+    },
+    {
+      "path": "ui/src/scene/Primitives.tsx",
+      "bytes": 7703,
+      "sha256": "8c14cd0a91e0319d8ddf1bae18f39be2a6d11e3d0f53785267cbbf03e7bb42e7"
+    },
+    {
+      "path": "ui/src/scene/RoomAccents.tsx",
+      "bytes": 2019,
+      "sha256": "d2de49af9b56db4d9425b94194b5a9bf90d445896c5d1e76490f32596a77cdce"
+    },
+    {
+      "path": "ui/src/scene/RoomArchitecture.tsx",
+      "bytes": 6136,
+      "sha256": "d51b6805880d5dbc769e802225e4191dac54cb85cf4c3b9638042fc34773653e"
+    },
+    {
+      "path": "ui/src/scene/RoomMap.tsx",
+      "bytes": 1288,
+      "sha256": "7093e2946c16f025d5abff68f653d99cb17cb7ba754f320bfb4cc16a32162046"
+    },
+    {
+      "path": "ui/src/scene/RoomProps.tsx",
+      "bytes": 6223,
+      "sha256": "5a1295df943c5c93d3822d0c29f59d19dba6ed88f6eff3929af648612bb1540d"
+    },
+    {
+      "path": "ui/src/scene/Woodland.tsx",
+      "bytes": 6414,
+      "sha256": "19e9e13f8636c194fa6f99f169063b3756ade8d76894269aa9b90f478a7c859d"
+    },
+    {
+      "path": "ui/src/scene/deskStaging.ts",
+      "bytes": 327,
+      "sha256": "4d32b0d5c36a16d764d160311bf4714e36ef35eb4e72e3973d7b9d7b0d380117"
+    },
+    {
+      "path": "ui/src/scene/fairyProfiles.ts",
+      "bytes": 2025,
+      "sha256": "f947c2ef3cebb970efc4f7dc3d0113e8d92db81d7862140dbe38c2f766d1d0eb"
+    },
+    {
+      "path": "ui/src/scene/layout.ts",
+      "bytes": 1367,
+      "sha256": "a7dd920578c1484db4342074768827191f5c1240539c584c1d1b583f9da2ba9c"
+    },
+    {
+      "path": "ui/src/scene/quality.ts",
+      "bytes": 1018,
+      "sha256": "9dd1dff36b817369117654f311c056722da8d181ae0dc65e6394bc9eea5b328b"
+    },
+    {
+      "path": "ui/src/state/renderObservations.ts",
+      "bytes": 403,
+      "sha256": "dce4204acd76a7201160c8e032f92d03bf1fb13fb8fa76c85ea96a371709f9ce"
+    },
+    {
+      "path": "ui/src/state/store.ts",
+      "bytes": 3397,
+      "sha256": "1d70dad29da06e0c1364fa48400d80bfc3474c9ac189184048f8911c262e24cf"
+    },
+    {
+      "path": "ui/src/styles.css",
+      "bytes": 25069,
+      "sha256": "668e085844b8f2e44db98e0fcdf2f5bc8c42dc70f588dd89d8ab07dae5bd0a9d"
+    },
+    {
+      "path": "ui/tests/public-ui.test.ts",
+      "bytes": 1751,
+      "sha256": "25737d533ee7172821c1e08e1e9b12bc332691d95f118c351b267ed0964e0e03"
+    },
+    {
+      "path": "ui/tsconfig.json",
+      "bytes": 244,
+      "sha256": "98ae8e3d6faaf50204499f910ebb4af0a606a45de28fa0ee68f559ec54e831c5"
+    },
+    {
+      "path": "ui/vite.config.ts",
+      "bytes": 987,
+      "sha256": "4603f30c06942e374dd6bcc9985598e063cc87f9ecd42469194e54d40ef81b73"
     }
   ]
 }

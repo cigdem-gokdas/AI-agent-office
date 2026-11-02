@@ -50,3 +50,15 @@ Added (9):
 Unchanged (3): `frontend/components/OwnerControls.tsx`, `go.mod`, `tsconfig.json`.
 
 Final observed results: Go tests/race/vet PASS (both packages); frontend 12 tests PASS; TypeScript PASS; component build PASS; deterministic 22-file inventory/hash/privacy check PASS; Git whitespace check PASS. No staged changes; HEAD remains cff4b4d. The inspected private-source hashes and private Git index/status remain unchanged.
+
+## ui-fairies publication update
+
+Authorized UI export: sanitized visual source only, generic room catalog, no private runtime/configuration or inherited history. Current reviewed base is de160eb. Owner explicitly requested a ui-fairies commit and push; earlier no-commit statements describe the previous component review, not this update. Source files are adapted to remove personal branding, registry loading, workflow-specific review logic, private server proxy and trademark logos. Existing component and transport security changes are preserved.
+
+Kenney furniture/nature and Poly Haven licenses were rechecked at official source pages. Generated scenery/face art provenance identifies original project outputs with no supplied reference pixels; owner requested publication of the UI. No third-party CC0 claim is made for generated art. ui/ASSETS.json pins every payload. Only exact pinned asset binaries bypass the text-only privacy check. Models have embedded resources, not remote paths.
+
+UI dependencies remain unmodified external packages. caniuse-lite is CC-BY-4.0, with upstream attribution/license preserved in npm packages; webgl-constants 1.1.1 has MIT in its package LICENSE despite missing metadata (license hash recorded). Other package metadata is recorded in DEPENDENCY_LICENSES.json. No compiled bundle, node_modules or source artwork prompts are published. Application code/owned art source licensing has not been invented.
+
+Current file inventory and hashes are authoritative in PUBLICATION_MANIFEST.json; the preceding exact-file list is historical. UI was production-built and viewed in a real browser before publishing. No actual work states or usage were fabricated; runtime unavailable is displayed.
+
+Public UI validation: 15 synthetic frontend tests passed; TypeScript and Vite production build passed. Real browser showed the complete world and Workshop zoom, unavailable runtime/token state and no captured warning/error logs. Export excludes branded wall logos and declares no helper profiles. No private backend service was modified or restarted.

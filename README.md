@@ -1,6 +1,9 @@
-# Local Owner Controls
+# Local Owner Controls and Fairy Headquarters
 
-Reusable source components for a separately secured local application. This release contains bounded Go JSON/capability helpers, a read-only outbound transport, React owner-session/routing/decision controls and a CSP header helper. It is not a complete agent runtime, OAuth client, email processor, Notion integration or standalone headquarters application.
+The repository now also includes a runnable sanitized fairy-world UI under `ui/`. See [UI setup and provenance](ui/README.md). Start with `npm run dev` (127.0.0.1:5175), build with `npm run build:ui` and preview with `npm run preview:ui`. It has no private backend or live account integration. Generic visual rooms do not claim agent execution or token usage.
+
+
+Reusable source components for a separately secured local application. This release contains bounded Go JSON/capability helpers, a read-only outbound transport, React owner-session/routing/decision controls and a CSP header helper. The reusable components are not a complete agent runtime, OAuth client, email processor or Notion integration; the separate UI is a standalone visual shell.
 
 ## Security changes
 
@@ -37,4 +40,4 @@ The components expect a compatible private backend at `/api/owner/` with session
 
 See `PUBLICATION_MANIFEST.json` for the exact reviewed file inventory and hashes, `PUBLIC_REVIEW.md` for verification scope, `EXCLUSIONS.md` for intentionally omitted material and `DEPENDENCY_LICENSES.json` for locked package metadata. The manifest deliberately excludes its own hash and inventories all other publishable files.
 
-No images, models, textures, screenshots, logos, personal artwork or third-party code binaries are distributed. Dependencies remain unmodified external packages with their own licenses; installed modules and build outputs are ignored. No application-source LICENSE has been selected in this component release. The owner should choose appropriate source licensing before further publication; dependency metadata does not grant a license to application code.
+The UI now distributes only explicitly pinned CC0 models/lighting and project-generated scenic/face artwork listed in ui/ASSETS.json. No owner photographs, private screenshots or trademark logos are distributed. Dependencies remain unmodified external packages with their own licenses; installed modules and build outputs are ignored. No application-source LICENSE has been selected in this component release. The owner should choose appropriate source licensing before further publication; dependency metadata does not grant a license to application code.

@@ -1,0 +1,193 @@
+{
+  "assets": [
+    {
+      "path": "ui/public/assets/vendor/kenney/books.glb",
+      "sha256": "b8dc56e5d29f6fc1f4727fccb1b9642627fee9942c48060a00034e98df02701c",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/desk.glb",
+      "sha256": "0164fe828f028b321730fb8c74502e353583f751be74da1682d42fff7d3c5a42",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/deskcorner.glb",
+      "sha256": "a6a77ba0083d5ecd34ad50f738867b03ed7b7f469429bb1acc78f423bcc3f034",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/bookcaseclosedwide.glb",
+      "sha256": "55b9903e9646dc407ed5237a1c41c1f0a14f9edc22e3392bdb9a4804d846af6a",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/bookcaseopen.glb",
+      "sha256": "750702218d68c062b15dfef6ab06a4014d1cfa8bd05f02e57c53b7e13bec157c",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/chaircushion.glb",
+      "sha256": "33544228984857f2cb502b58452fed72157335f9b1caf29e96da5c9094c53fdc",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/chairdesk.glb",
+      "sha256": "46406619186034cbe92b19b79a5f1a8e3f442a17a70a7524ef2c0ad0f35095c6",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/laptop.glb",
+      "sha256": "5fa8a1f4a71ab8d82ef64da77a6973ffd350c6d4557516069a4ffd4bb8d808af",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/computerkeyboard.glb",
+      "sha256": "9d9135789de2120e9f41ce3f0a56dd1b15f40adcc7888739bb842a2d820da322",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/computerscreen.glb",
+      "sha256": "5942cbad29a2d2b956619569926e81d50a4174403d592fece6556e57632dc643",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/lamproundtable.glb",
+      "sha256": "75bb644caaa3da003b4fcad7a931722dd61cd2858aab70cf660021d5061fa1b2",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/lamproundfloor.glb",
+      "sha256": "50fe1b5b588edf15bfa9cc880f71a02a4fda6036350b24733d0ef4de5cc5e908",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/loungechairrelax.glb",
+      "sha256": "def698179e44de6cd17f4cfc2730273da54dd25458a29b079fbf4468abe5d98e",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/furniture-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/flower-purpleb.glb",
+      "sha256": "2afb10cd68a9a7b185fc46110be0da550ea2aef86ef9ac6b7339f217eb4b636a",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/nature-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/flower-redc.glb",
+      "sha256": "5a5c9c8572e8f56287ee1f5f836f98ac08e275f31325b4bc91d2832bc142ceb7",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/nature-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/mushroom-redgroup.glb",
+      "sha256": "29f02df0589dd2b09e8d2aff6a4662394dac5cfcf1fec701640dcbd6127e0802",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/nature-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/mushroom-tangroup.glb",
+      "sha256": "2dc979485f164d7dce34329096271f44e0c9ea329c104251d94bcfbc8f8fe05e",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/nature-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/bridge-woodround.glb",
+      "sha256": "3b8593e6f50ae78f0f3f5d51ef5ac4751808fd5cbd462f35d09bbde5388f1034",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/nature-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/kenney/cliff-waterfall-rock.glb",
+      "sha256": "08063b24498cae385c204e9038a72f0dd438fdfa29ecf106a0df5e656b7edff6",
+      "license": "CC0-1.0",
+      "creator": "Kenney",
+      "source": "https://kenney.nl/assets/nature-kit"
+    },
+    {
+      "path": "ui/public/assets/vendor/sunrise-1k.hdr",
+      "sha256": "835e88eb25464f4b164ff04e21f76a7f00474381cef787a86cc512687bc10059",
+      "license": "CC0-1.0",
+      "creator": "Greg Zaal / Poly Haven",
+      "source": "https://polyhaven.com/a/syferfontein_1d_clear"
+    },
+    {
+      "path": "ui/public/assets/art105/kingdom.webp",
+      "sha256": "566bc0a7abead37d8adbceb2c4a3f65d18a191b81e6232080a221412bba32cdf",
+      "origin": "Project-generated AI-assisted scenery or face decal; no reference pixels",
+      "rights": "Published at owner request; not claimed third-party CC0"
+    },
+    {
+      "path": "ui/public/assets/art105/kingdom.jpg",
+      "sha256": "97c4e07623de4c93440910076ee5aa27b870e54745a1e911f91e6789f124b248",
+      "origin": "Project-generated AI-assisted scenery or face decal; no reference pixels",
+      "rights": "Published at owner request; not claimed third-party CC0"
+    },
+    {
+      "path": "ui/public/assets/art105/kingdom-mobile.webp",
+      "sha256": "19431e6de2d6259c6e7dff9b2b492354bd4ddc2b48345ef1bd0f835c072ac23a",
+      "origin": "Project-generated AI-assisted scenery or face decal; no reference pixels",
+      "rights": "Published at owner request; not claimed third-party CC0"
+    },
+    {
+      "path": "ui/public/assets/art105/kingdom-mobile.jpg",
+      "sha256": "bf1dbafbb292d736af45bf7f2e95f18f9d5ecab29190ee1805337d35a82345e1",
+      "origin": "Project-generated AI-assisted scenery or face decal; no reference pixels",
+      "rights": "Published at owner request; not claimed third-party CC0"
+    },
+    {
+      "path": "ui/public/assets/art105/face.webp",
+      "sha256": "78a5b822929267bdc03403363eb01d2461f5be60f2410c7bee3c02b6507bbb5d",
+      "origin": "Project-generated AI-assisted scenery or face decal; no reference pixels",
+      "rights": "Published at owner request; not claimed third-party CC0"
+    },
+    {
+      "path": "ui/public/assets/art105/face.png",
+      "sha256": "c909f2223b75cf34a3099f29288cc4fc75edfd2b44839660ee8487caf15a71bc",
+      "origin": "Project-generated AI-assisted scenery or face decal; no reference pixels",
+      "rights": "Published at owner request; not claimed third-party CC0"
+    },
+    {
+      "path": "ui/public/assets/art105/face-mobile.webp",
+      "sha256": "e6b551ddac69749b7a9d51f19e4147e08715258753fe2807d6a181e0276d121c",
+      "origin": "Project-generated AI-assisted scenery or face decal; no reference pixels",
+      "rights": "Published at owner request; not claimed third-party CC0"
+    },
+    {
+      "path": "ui/public/assets/art105/face-mobile.png",
+      "sha256": "4c5af0abf831ba07437742875678afd473c710beec5ec755bacb0f2c585d1a6d",
+      "origin": "Project-generated AI-assisted scenery or face decal; no reference pixels",
+      "rights": "Published at owner request; not claimed third-party CC0"
+    }
+  ],
+  "excluded": "Private photos, screenshots, source references, unused historical models, brand logos and uncertain rights omitted."
+}

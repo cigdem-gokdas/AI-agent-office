@@ -1,0 +1,8 @@
+Syferfontein 1d Clear — Greg Zaal / Poly Haven
+Source: https://polyhaven.com/a/syferfontein_1d_clear
+Publisher asset license: https://polyhaven.com/license
+Declared license: CC0 1.0 Universal
+Dedication: https://creativecommons.org/publicdomain/zero/1.0/
+Attribution is not required; creator credit is retained voluntarily.
+The official 1K HDR is included unchanged for local environment lighting.
+Verified 2026-10-30. This file records provenance; the linked dedication supplies the full legal text.

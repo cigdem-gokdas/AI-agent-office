@@ -15,7 +15,7 @@ SKILL.md
 .claude/
 .codex/
 config/
-data/
+/data/
 memories/
 journals/
 backups/
@@ -27,3 +27,5 @@ backups/
 *.zip
 *.7z
 .DS_Store
+
+/dist-ui/

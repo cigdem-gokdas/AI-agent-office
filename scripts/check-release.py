@@ -10,7 +10,7 @@ manifest = json.loads((root / "PUBLICATION_MANIFEST.json").read_text())
 expected = {item["path"] for item in manifest["files"]} | {"PUBLICATION_MANIFEST.json"}
 failures = []
 actual = set()
-skip = {".git", "node_modules", "dist"}
+skip = {".git", "node_modules", "dist", "dist-ui"}
 def visit(folder):
     for path in folder.iterdir():
         rel = path.relative_to(root).as_posix()
@@ -25,6 +25,8 @@ def visit(folder):
 visit(root)
 for rel in sorted(actual ^ expected):
     failures.append((rel, "unexpected or missing publication file"))
+asset_rows=json.loads((root / "ui/ASSETS.json").read_text())["assets"]
+assets={row["path"]:row for row in asset_rows}
 patterns = {
     "credential": r"\b(?:sk-ant-|ghp_|github_pat_|ntn_|secret_|ya29\.)[A-Za-z0-9_.-]{20,}",
     "private key": r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----",
@@ -38,6 +40,11 @@ for rel in sorted(actual & expected):
     if path.name.lower() in {"agent.md", "agents.md", "skill.md"} or path.name.startswith(".env"):
         failures.append((rel, "private filename"))
     data = path.read_bytes()
+    if rel in assets:
+        row=assets[rel]
+        if hashlib.sha256(data).hexdigest()!=row["sha256"] or not (row.get("license")=="CC0-1.0" or row.get("rights")=="Published at owner request; not claimed third-party CC0"):
+            failures.append((rel,"unreviewed asset/hash"))
+        continue
     try:
         text = data.decode("utf-8")
     except UnicodeDecodeError:
@@ -59,7 +66,10 @@ for item in manifest["files"]:
             failures.append((item["path"], "manifest hash/size mismatch"))
 lock = json.loads((root / "package-lock.json").read_text())
 for key, value in lock["packages"].items():
-    if key and value.get("license") not in {"MIT", "ISC", "Apache-2.0", "BSD-3-Clause", "MPL-2.0", "0BSD"}:
+    if key=="node_modules/webgl-constants" and not value.get("license"):
+        if value.get("version")!="1.1.1":failures.append((key,"unreviewed missing-license version"))
+        continue
+    if key and value.get("license") not in {"MIT", "ISC", "Apache-2.0", "BSD-3-Clause", "MPL-2.0", "0BSD", "CC-BY-4.0"}:
         failures.append((key, "unreviewed license metadata"))
     if "resolved" in value and not value["resolved"].startswith("https://registry.npmjs.org/"):
         failures.append((key, "unreviewed dependency source"))
