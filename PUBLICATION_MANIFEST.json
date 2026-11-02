@@ -1,20 +1,32 @@
 {
-  "scope": "Explicit reviewed source component release; no original history, private configuration or assets",
+  "scope": "Audited generic source components and synthetic tests only; no private runtime, configuration, policies, accounts, data, assets or inherited history",
+  "base_commit": "cff4b4d",
+  "manifest_self_excluded": true,
   "files": [
     {
       "path": ".gitignore",
-      "sha256": "b7fe46abe7e8b3b5746f6fb5f437cc65bb404af4f8898a0fcea22ded7c7e5596",
-      "bytes": 59
+      "sha256": "2d05084e94c2f96b65425d3489e078b6cdadaf737ad4dc40314d42d641d115a9",
+      "bytes": 292
+    },
+    {
+      "path": "DEPENDENCY_LICENSES.json",
+      "sha256": "3f86e36a7b371e80a0424498c2effd048ea5a3497d483ed0a69eb938659b1ddb",
+      "bytes": 26914
     },
     {
       "path": "EXCLUSIONS.md",
-      "sha256": "ef3dc2edd47813229c6ada1f800f9109758e70df1ad79bdea9d83dbbe6bbc195",
-      "bytes": 691
+      "sha256": "818e4b294588c3cb9c706dd8a1ea58cb69f1fc95b26a43e6238785c0d612bcc4",
+      "bytes": 1698
+    },
+    {
+      "path": "PUBLIC_REVIEW.md",
+      "sha256": "ca0d34e62886ec9b876fd1855ff0e0855fba1c1ef778210cc8fe4d02caa8ded1",
+      "bytes": 4145
     },
     {
       "path": "README.md",
-      "sha256": "0935191a5d8ba34c82277c8227054a3a23df8efc92861f59bb06329568cd80b2",
-      "bytes": 1721
+      "sha256": "c0b69bf84050a9ea0510c38a422ff468ea1586c251dd66aba32b0af6950aa78a",
+      "bytes": 4410
     },
     {
       "path": "frontend/components/OwnerControls.tsx",
@@ -23,13 +35,28 @@
     },
     {
       "path": "frontend/data/ownerBridge.ts",
-      "sha256": "850ee49b1e2d13af68a9fd58a209bda6709abccd0206c555c48045521f38bf56",
-      "bytes": 2545
+      "sha256": "13c8b0f122a6e43fb020d2c6074231cd54e0e90bb0eea1249e0d45a10b6d0946",
+      "bytes": 2888
+    },
+    {
+      "path": "frontend/security/headers.ts",
+      "sha256": "8a9f9d7718a464fd8892a730d161bf0c35d526955c34df0ea7e57d140965c324",
+      "bytes": 774
     },
     {
       "path": "frontend/tests/owner-bridge.test.ts",
-      "sha256": "ff4f6701895c089c6f90cf7ecc01ac307b2d4020fcddea04b50172b2771d072b",
-      "bytes": 2093
+      "sha256": "592ccce6e416124f7c5e2e037ea6152706ccc9912b197f058dfa058aa597a744",
+      "bytes": 3158
+    },
+    {
+      "path": "frontend/tests/rendering.test.tsx",
+      "sha256": "6d9602f7535eec1d130c3c0fc84ff28801a49a476ba369caa84d677705afb74f",
+      "bytes": 632
+    },
+    {
+      "path": "frontend/tests/security-headers.test.ts",
+      "sha256": "0cb132e261c81e92c5e9d9f89d688a0392aa58a0a531cc3f6f008e962e4d427f",
+      "bytes": 938
     },
     {
       "path": "go.mod",
@@ -37,24 +64,44 @@
       "bytes": 51
     },
     {
+      "path": "outbound/reader.go",
+      "sha256": "e98718a73b708ff66ced8360a3f39a5f36bff4d463ad296d146118f56dd929d8",
+      "bytes": 3059
+    },
+    {
+      "path": "outbound/reader_test.go",
+      "sha256": "8532bcf7b0e1d57ce668b83e5c65c65580758cbfa1487d8221e3f0c5a7c1e3b9",
+      "bytes": 2868
+    },
+    {
       "path": "package-lock.json",
-      "sha256": "64d49a95c0b6d7c556a4051ac6d9b11fea7dcdb34a3ba1d6d60e2976c5a96132",
-      "bytes": 125960
+      "sha256": "775966f60378786b5e8e5be8131ba377250cbbd4fb342ec72061062452ce0902",
+      "bytes": 65651
     },
     {
       "path": "package.json",
-      "sha256": "4df788cda289cf62458f177812c4bf0c114f68d9dd7fc88311414cd3c29318fb",
-      "bytes": 776
+      "sha256": "4d8c97e71e7cc65a5e8ae356c059c2b9f60458c30a6b78c3aed05b83e5a4c731",
+      "bytes": 540
+    },
+    {
+      "path": "scripts/check-release.py",
+      "sha256": "1c802fd174ecb57a18299e3482abba39773e93ddffb9d85c0757aee1d7902353",
+      "bytes": 3282
     },
     {
       "path": "transport/transport.go",
-      "sha256": "44896012981c8cdc5dfdcca0f1c6d0e962b4e7413f2c47ac43ca8e52b124a309",
-      "bytes": 1094
+      "sha256": "1bfabcd823443f7b2a4ed15c4ca397806980df3b37b85bf5e1ed69981bba7d4d",
+      "bytes": 3132
     },
     {
       "path": "transport/transport_test.go",
-      "sha256": "bc5672a046dde42a0fe24d9d11b989cd1697f434cf55d8e3870425dd80e8b986",
-      "bytes": 577
+      "sha256": "e2640cefaba43d51a2b792a9833620a3043dbd9588548541e544fafdae55d1cb",
+      "bytes": 2379
+    },
+    {
+      "path": "tsconfig.build.json",
+      "sha256": "9c2c2c6f284b204eae0616eb8cc33b936db7399cb08c7cebee6e6cea68fb7949",
+      "bytes": 290
     },
     {
       "path": "tsconfig.json",

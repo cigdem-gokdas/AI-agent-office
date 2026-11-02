@@ -6,3 +6,24 @@ dist/
 *.log
 *.tar*
 *.dmg
+
+# Never publish local instructions, operational records, credentials or backups
+AGENT.md
+AGENTS.md
+SKILL.md
+.agents/
+.claude/
+.codex/
+config/
+data/
+memories/
+journals/
+backups/
+*.sqlite*
+*.pem
+*.key
+*.p12
+*.pfx
+*.zip
+*.7z
+.DS_Store

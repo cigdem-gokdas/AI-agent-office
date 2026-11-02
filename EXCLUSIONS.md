@@ -1,5 +1,9 @@
 # Publication exclusions
 
-No original Git history or remote configuration; private agent/skill instructions or references; company policy, account configuration or private workflows; personal identifiers, schedules or documents; memory, journals, tasks or conversations; operational state; credentials, environment files or authentication material; backups, generated reports, screenshots or bundles; supplied artwork, branding or external binary assets. These are absent, not deleted from a reused history.
+This existing clean component repository is updated selectively. No private Git history, remote configuration, instructions, prompts, skills, personal workflow policies, agent registry, private configuration, destination IDs, account identifiers, calendars, documents, memories, journals, conversation/task history, logs, backups, environment files, OAuth/refresh tokens, credentials or private reports are included.
 
-This deliberately limited release does not distribute the private application or reproduce its confidential configuration. No original owner data is needed for its component checks.
+The full UI/Go server, private scope/grant engine, daily review workflow, mail capture logic, specialist instructions and account-specific Notion/Gmail adapters are excluded. Those files couple generic mechanisms to private policy and runtime contracts; no attempt was made to sanitize them by broadly copying the application. Only generic reviewed mechanisms were adapted. The public outbound primitive cannot write, modify a mailbox or apply an approved record.
+
+All artwork and external asset binaries remain excluded, including material whose ownership or redistribution rights would need separate review. No private screenshots or fixtures are exported. Tests use invented values and no real message/page/database identifiers. Installed dependencies and emitted component output are local-only, ignored and absent from the publication manifest. Do not add those folders to a commit.
+
+No original repository history, staged files, credentials or GitHub session is imported. Nothing is staged, committed or pushed by this update. No model or external account is activated. An absent file is not proof that a future change is safe: rerun the inventory/hash/privacy checks and inspect the full diff before committing. Do not use broad staging commands.
